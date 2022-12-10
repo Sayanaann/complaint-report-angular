@@ -12,7 +12,9 @@ const myroute:Routes=[
   {
   path:"",
   component:AdminloginComponent
-  }
+  },
+  
+
 ]
 
 @NgModule({
