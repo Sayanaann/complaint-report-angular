@@ -4,21 +4,20 @@
 
 <div class="row g-3">
 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-    <h2>Admin Login</h2>
+    <h2>User Login</h2>
 </div>
 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
-    <label for="" class="form-label">Username</label>
-    <input  name ="username" [(ngModel)] ="username"type="text" class="form-control">
+    <label for="" class="form-label">Email id</label>
+    <input  name ="emailid" [(ngModel)] ="emailid" type="email" class="form-control">
 </div>
 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 ">
     <label for="" class="form-label">Password</label>
     <input name ="password" [(ngModel)] ="password" type="password" name="" id="" class="form-control">
 </div>
 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-    <button (click)="login()" class="btn btn-success">Login</button>
+    <button (click)="userlogin()" class="btn btn-success">Login</button>
 </div>
-<br>
-<div class="text-center small">Click here<a class="card-link" routerLink="/userlogin">User Login</a></div>
+
 <br>
 <div class="text-center small">New User?<a class="card-link" routerLink="/userregistration">User Signup</a></div>
 
@@ -26,4 +25,3 @@
 
 </div>
 </div>
-
