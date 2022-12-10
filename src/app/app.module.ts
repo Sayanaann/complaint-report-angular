@@ -7,7 +7,12 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { UserregistrationComponent } from './userregistration/userregistration.component'
+import { UserregistrationComponent } from './userregistration/userregistration.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
+import { AdminnavComponent } from './adminnav/adminnav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UsernavComponent } from './usernav/usernav.component'
 
 const myroute:Routes=[
   {
@@ -17,7 +22,20 @@ const myroute:Routes=[
   {
     path:"userregistration",
     component:UserregistrationComponent
-    }
+    },
+    {
+      path:"userlogin",
+      component:UserloginComponent
+      },
+      {
+        path:"dashboard",
+        component:DashboardComponent
+        },
+        {
+          path:"viewprofile",
+          component:ViewprofileComponent
+          }
+    
   
 
 ]
@@ -26,7 +44,12 @@ const myroute:Routes=[
   declarations: [
     AppComponent,
     AdminloginComponent,
-    UserregistrationComponent
+    UserregistrationComponent,
+    UserloginComponent,
+    ViewprofileComponent,
+    AdminnavComponent,
+    DashboardComponent,
+    UsernavComponent
   ],
   imports: [
     BrowserModule,
