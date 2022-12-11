@@ -13,7 +13,9 @@ import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { AdminnavComponent } from './adminnav/adminnav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsernavComponent } from './usernav/usernav.component';
-import { ComplaintsComponent } from './complaints/complaints.component'
+import { ComplaintsComponent } from './complaints/complaints.component';
+import { UsercomplaintsComponent } from './usercomplaints/usercomplaints.component';
+import { AdminviewcompComponent } from './adminviewcomp/adminviewcomp.component'
 
 const myroute:Routes=[
   {
@@ -39,7 +41,15 @@ const myroute:Routes=[
    {
     path:"complaints",
     component:ComplaintsComponent
-    }
+    },
+    {
+      path:"usercomplaints",
+      component:UsercomplaintsComponent
+      },
+      {
+        path:"adminviewcomplaints",
+        component:AdminviewcompComponent
+        }
      
     
   
@@ -56,7 +66,9 @@ const myroute:Routes=[
     AdminnavComponent,
     DashboardComponent,
     UsernavComponent,
-    ComplaintsComponent
+    ComplaintsComponent,
+    UsercomplaintsComponent,
+    AdminviewcompComponent
   ],
   imports: [
     BrowserModule,
