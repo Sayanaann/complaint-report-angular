@@ -12,7 +12,8 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { AdminnavComponent } from './adminnav/adminnav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { UsernavComponent } from './usernav/usernav.component'
+import { UsernavComponent } from './usernav/usernav.component';
+import { ComplaintsComponent } from './complaints/complaints.component'
 
 const myroute:Routes=[
   {
@@ -20,21 +21,26 @@ const myroute:Routes=[
   component:AdminloginComponent
   },
   {
-    path:"userregistration",
-    component:UserregistrationComponent
-    },
-    {
-      path:"userlogin",
-      component:UserloginComponent
-      },
-      {
-        path:"dashboard",
-        component:DashboardComponent
-        },
-        {
-          path:"viewprofile",
-          component:ViewprofileComponent
-          }
+   path:"userregistration",
+  component:UserregistrationComponent
+   },
+   {
+   path:"userlogin",
+   component:UserloginComponent
+   },
+  {
+  path:"dashboard",
+   component:DashboardComponent
+  },
+  {
+   path:"viewprofile",
+   component:ViewprofileComponent
+   },
+   {
+    path:"complaints",
+    component:ComplaintsComponent
+    }
+     
     
   
 
@@ -49,7 +55,8 @@ const myroute:Routes=[
     ViewprofileComponent,
     AdminnavComponent,
     DashboardComponent,
-    UsernavComponent
+    UsernavComponent,
+    ComplaintsComponent
   ],
   imports: [
     BrowserModule,
